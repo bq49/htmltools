@@ -12,7 +12,7 @@ class GameMain{
     public initSean(htmlContent:string,confSrc:string):void
     {
         var html_msg = new SeanHtmlString(htmlContent,confSrc);
-        html_msg.pos(0,150);
+        html_msg.pos(0,100);
 
         Laya.stage.addChild(html_msg);
     }
@@ -45,6 +45,6 @@ var src_test_html = "./assets/test.html";
 
 var main = new GameMain();
 main.initSean(str_html,src_conf);
-// main.initLayaHtml(str_html);
-// main.initLayaHtmlIframe(src_test_html);
+main.initLayaHtml(str_html);
+main.initLayaHtmlIframe(src_test_html);
 

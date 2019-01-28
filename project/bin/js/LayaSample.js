@@ -8,7 +8,7 @@ var GameMain = /** @class */ (function () {
     //初始化SeanHtmlString
     GameMain.prototype.initSean = function (htmlContent, confSrc) {
         var html_msg = new SeanHtmlString(htmlContent, confSrc);
-        html_msg.pos(0, 150);
+        html_msg.pos(0, 100);
         Laya.stage.addChild(html_msg);
     };
     //初始化Laya自带HTMLDivElement
@@ -33,6 +33,6 @@ var src_conf = "./conf/libhtml.json";
 var src_test_html = "./assets/test.html";
 var main = new GameMain();
 main.initSean(str_html, src_conf);
-// main.initLayaHtml(str_html);
-// main.initLayaHtmlIframe(src_test_html);
+main.initLayaHtml(str_html);
+main.initLayaHtmlIframe(src_test_html);
 //# sourceMappingURL=LayaSample.js.map
