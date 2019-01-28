@@ -22,20 +22,19 @@
 
 <h1>使用方法：</h1>
 
-<code>
-/*构造并添加到场景
-* htmlContent --- 需要显示的带有html标签的内容文本
-* confSrc     --- 本工具的配置文件路径
-*/
-public initSean(htmlContent:string,confSrc:string):void
-{
-	var html_msg = new SeanHtmlString(htmlContent,confSrc);
-	html_msg.pos(0,100);
+```ts
+	/*构造并添加到场景
+	* htmlContent --- 需要显示的带有html标签的内容文本
+	* confSrc     --- 本工具的配置文件路径
+	*/
+	public initSean(htmlContent:string,confSrc:string):void
+	{
+		var html_msg = new SeanHtmlString(htmlContent,confSrc);
+		html_msg.pos(0,100);
 
-	Laya.stage.addChild(html_msg);
-}
-
-</code>
+		Laya.stage.addChild(html_msg);
+	}
+```
 
 
 <h1>其他：</h1>
