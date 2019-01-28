@@ -22,6 +22,7 @@
 
 <h1>使用方法：</h1>
 
+<code>
 /*构造并添加到场景
 * htmlContent --- 需要显示的带有html标签的内容文本
 * confSrc     --- 本工具的配置文件路径
@@ -33,4 +34,13 @@ public initSean(htmlContent:string,confSrc:string):void
 
 	Laya.stage.addChild(html_msg);
 }
+
+</code>
+
+
+<h1>其他：</h1>
+
+无私分享，不足之处，请轻砸。
+
+sean.guo49@gmail.com
 
